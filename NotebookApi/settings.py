@@ -23,12 +23,13 @@ SECRET_KEY = 'django-insecure-sfiyl^r59@@nn7xrtiam(q_@n!$22n5jti%=iw$$vndi7q&5ao
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://dorcasnotesapp.herokuapp.com', 'localhost','127.0.0.1']
+ALLOWED_HOSTS = ['https://dorcasnotesapp.herokuapp.com', 'https://git.heroku.com/dorcasnotesapp.git' 'localhost','127.0.0.1']
 
 # set casting for , default value for the env varibles
 env = environ.Env(
     DEBUG=(bool, False)
 )
+
 
 # read the .env file
 environ.Env.read_env()
